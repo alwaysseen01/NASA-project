@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Space Gallery </title>
+    <link rel="stylesheet" href="EarthImages.css">
+    <link rel="shortcut icon" href="mainPage-icons/shortcut-icon.png" type="image/x-icon">
+    <script src="mainPage.js"></script>
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
+    
+    <header>
+        <div id="header-box">
+            <h1 id="logo-h1"> NASA </h1>
+            <div id="small-menu-box" onclick="openMenu(event)">
+                <div id="menu-line-1"></div>
+                <div id="menu-line-2"></div>
+                <div id="menu-line-3"></div>
+            </div>
+        </div>
+    </header>
+
+    <div id="menuBox">
+        <img id="go-back-icon" src="mainPage-icons/go-back-icon.png" alt="" onclick="openEarthImagesPage(event)">
+        <ul id="menuOptionsBox">
+            <li onclick="openMainPage(event)"> MAIN PAGE </li>
+            <li onclick="openEarthImagesPage(event)"> GALLERY </li>
+        </ul>
+    </div>
+
+    <main>
+        <div id="main-box">
+            <h1 id="title"> GET FREE EARTH IMAGE </h1>
+            <div id="earth-input-box">
+                <input id="longitude-input" placeholder="Logitude">
+                <input id="attitude-input" placeholder="Attitude">
+                <img id="search-icon" src="mainPage-icons/search-icon.png" alt="" onclick="getEarthImage(event)">
+            </div>
+            <img id="earth-img" src="" alt="">
+            <h2 id="earth-img-description">
+                Our site gives you an opportunity to get free satelite image of the Earth made... today!
+            </h2>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-box">
+            <div id="contacts-box">
+                <h3> Contacts: </h3>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzCwrjvfkFcRflszMzpTcQLnCKqVcbRCPCsvdlVBkMpsWkChtJDmLBgQKKbPfmzFWPlV"> iruzhilov@gmail.com </a>
+                <h4> +7(708)353-14-19 </h4>
+            </div>
+            <div id="add-info-box">
+                <h3> Additional information: </h3>
+                <a href="https://en.wikipedia.org/wiki/Asteroid"> Asteroids </a>
+                <a href="https://en.wikipedia.org/wiki/Planet"> Planets </a>
+                <a href="https://www.nasa.gov/"> NASA </a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Space Interaction </title>
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="shortcut icon" href="mainPage-icons/shortcut-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <script src="mainPage.js"></script>
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
+    
+    <header>
+        <div id="header-box">
+            <h1 id="logo-h1"> NASA </h1>
+            <div id="small-menu-box" onclick="openMenu(event)">
+                <div id="menu-line-1"></div>
+                <div id="menu-line-2"></div>
+                <div id="menu-line-3"></div>
+            </div>
+        </div>
+    </header>
+    <div id="menuBox">
+        <img id="go-back-icon" src="mainPage-icons/go-back-icon.png" alt="" onclick="closeMenu(event)">
+        <ul id="menuOptionsBox">
+            <li onclick="openMainPage(event)"> MAIN PAGE </li>
+            <li onclick="openEarthImagesPage(event)"> EARTH IMAGES </li>
+        </ul>
+    </div>
+
+    <main>
+        <div id="main-box">
+            <div id="content-box-1">
+                    <div id="text-top-box">
+                        <h2> Have you ever thought about the space? </h2>
+                        <div id="text-top-flexbox">
+                            <h3>
+                                Space is a boundless space, the size of which is simply impossible to 
+                                imagine. It is full of mysteries, amazing secrets and endless possibilities.
+                            </h3>
+                            <div id="divider-line"> </div>
+                            <img src="mainPage-icons/brain-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div id="text-bottom-box">
+                        <div id="text-bottom-left">
+                            <h3> Space is full of different objects such as asteroids, planets, gas clouds 
+                                and more. 
+                            </h3>
+                        </div>
+                        <div id="text-bottom-icons">
+                            <img src="mainPage-icons/meteor-icon.png" alt="">
+                            <img src="mainPage-icons/planet-icon.png" alt="">
+                            <img src="mainPage-icons/rocket-icon.png" alt="">
+                            <img src="mainPage-icons/object-icon.png" alt="">
+                            <img src="mainPage-icons/statelite-icon.png" alt="">
+                            <img src="mainPage-icons/sun-icon.png" alt="">
+                        </div>
+                    </div>
+            </div>
+            <div id="content-box-2">
+                <h2 id="content-box-2-title"> ASTEROID - WHAT IS IT? </h2>
+                <div id="content-box-2-gifbox">
+                    <img src="mainPage-icons/asteroid-gif.gif" alt="">
+                    <img src="mainPage-icons/asteroid1-gif.gif" alt="">
+                    <img src="mainPage-icons/asteroid3-gif.gif" alt="">
+                </div>
+                <div id="content-box-2-bottom">
+                    <h2>
+                        An asteroid is a minor planet of the inner Solar System. Sizes and 
+                        shapes of asteroids vary significantly, ranging from 1-meter rocks to a dwarf 
+                        planet almost 1000 km in diameter; they are rocky, metallic or icy bodies with no 
+                        atmosphere.
+                        <br>
+                        <br>
+                        Of the roughly one million known asteroids the greatest number are located 
+                        between the orbits of Mars and Jupiter, approximately 2 to 4 AU from the Sun, in the 
+                        main asteroid belt.
+                        <br>
+                        <br>
+                            Try to get access for any asteroid data:
+                    </h2>
+                    <div id="asteroid-input">
+                        <input id="asteroid" type="text" placeholder="Enter asteroid ID">
+                        <img id="search-icon" src="mainPage-icons/search-icon.png" alt="" onclick="getAsteroidData(event)">
+                    </div>
+                    <div id="asteroid-info-box">
+                        <h3 id="notation-text">
+                            You can find ID of any asteroid on <a href="https://solarsystem.nasa.gov/asteroids-comets-and-meteors/asteroids/overview/?page=0&per_page=40&order=name+asc&search=&condition_1=101%3Aparent_id&condition_2=asteroid%3Abody_type%3Ailike"> nasa.gov </a>
+                            <br>
+                            Try to input example: 3542519
+                        </h3>
+                        <h2 id="asteroid-info-name"> Name: </h2>
+                        <h2 id="asteroid-info-diameter"> Diameter: </h2>
+                        <h2 id="ateroid-info-date"> Discovery date: </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-box-3">
+                <h2 id="content-box-3-title"> INTRODCUTION TO ROVERS </h2>
+                <div id="content-box-3-gifbox">
+                    <img src="mainPage-icons/rover1-icon.jpg" alt="">
+                    <img src="mainPage-icons/rover2-icon.jpg" alt="">
+                    <img src="mainPage-icons./rover3-icon.jpg" alt="">
+                </div>
+                <div id="content-box-3-bottom">
+                    <h2>
+                            A rover (or sometimes planetary rover) is a planetary surface exploration device 
+                            designed to move across the solid surface on a planet or other planetary mass 
+                            celestial bodies. 
+                        <br>
+                        <br>
+                            Rovers arrive on spacecraft and are used in conditions very distinct from those 
+                            on the Earth, which makes some demands on their design.
+                        <br>
+                        <br>
+                            One of that rovers - Curiosity.
+                            Feel free to get access for Curiosity's photos from Mars:
+                    </h2>
+                    <div id="rover-input">
+                        <input id="rover" type="text" placeholder="Enter SOL">
+                        <img id="search-icon" src="mainPage-icons/search-icon.png" alt="" onclick="getRoverPhoto(event)">
+                    </div>
+                    <div id="rover-info-box">
+                        <h3 id="notation-text">
+                            You can find SOL data on <a href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/"> nasa.gov </a>
+                            <br>
+                            Try to input example: 1000
+                        </h3>
+                        <div id="rover-info-img-box">
+                            <h2> Image: </h2>
+                            <img id="rover-info-img" src="" alt="">
+                        </div>
+                        <h2 id="rover-info-photoID"> Photo ID: </h2>
+                        <h2 id="rover-info-camera-name"> Camera: </h2>
+                        <h2 id="rover-info-camera-earth-date"> Earth date: </h2>
+                    </div>
+                    <a id="rover-info-source-link" href=""> PHOTO SOURCE LINK </a>
+                </div>
+            </div>
+
+            <div id="content-box-4">
+                <h2 id="content-box-4-title"> SPACE PICTURE OF THE DAY </h2>
+                <img id="imageOfTheDay" src="" alt="">
+                <h2 id="content-box-4-description"> </h2>
+                <a id="imageOfTheDay-info-source-link" href=""> PHOTO SOURCE LINK </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-box">
+            <div id="contacts-box">
+                <h3> Contacts: </h3>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzCwrjvfkFcRflszMzpTcQLnCKqVcbRCPCsvdlVBkMpsWkChtJDmLBgQKKbPfmzFWPlV"> iruzhilov@gmail.com </a>
+                <h4> +7(708)353-14-19 </h4>
+            </div>
+            <div id="add-info-box">
+                <h3> Additional information: </h3>
+                <a href="https://en.wikipedia.org/wiki/Asteroid"> Asteroids </a>
+                <a href="https://en.wikipedia.org/wiki/Planet"> Planets </a>
+                <a href="https://www.nasa.gov/"> NASA </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
